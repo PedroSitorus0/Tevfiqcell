@@ -1,0 +1,227 @@
+/* RESET dan FONT */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f7f9;
+    color: #333;
+}
+
+
+
+/* HEADER dan NAVIGASI */
+header {
+    background-color: #007bff; /* Biru Primer */
+    color: white;
+    padding: 15px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2em;
+    font-weight: 700;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 25px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffd700; /* Emas untuk hover */
+}
+
+/* MAIN CONTENT */
+main {
+    padding: 40px 0;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
+}
+
+.card h2 {
+    color: #007bff;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+/* FORM STYLING */
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #555;
+}
+
+input[type="tel"],
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+input[type="tel"]:focus,
+select:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+}
+
+/* BUTTONS */
+.btn {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+.btn.primary {
+    background-color: #28a745; /* Hijau untuk aksi utama */
+    color: white;
+}
+
+.btn.primary:hover {
+    background-color: #218838;
+}
+
+.btn.secondary {
+    background-color: #ffc107; /* Kuning untuk aksi sekunder */
+    color: #333;
+}
+
+.btn.secondary:hover {
+    background-color: #e0a800;
+}
+
+.btn.info {
+    background-color: #6c757d;
+    color: white;
+}
+.btn.info:hover {
+    background-color: #5a6268;
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+/* PESAN */
+.message {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #e9ecef;
+    color: #007bff;
+    font-weight: 500;
+    text-align: center;
+    visibility: hidden; /* Awalnya sembunyi */
+}
+
+/* FITUR LAIN (GRID) */
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.feature-item {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    border: 1px solid #eee;
+}
+
+.feature-item h3 {
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.feature-item p {
+    margin-bottom: 15px;
+    font-size: 0.95em;
+    color: #666;
+}
+
+/* FOOTER */
+footer {
+    background-color: #343a40; /* Abu-abu Gelap */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 5px solid #007bff;
+}
+
+footer a {
+    color: #ffc107;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 123, 255, 0.75), rgba(0, 0, 0, 0));
+    margin: 40px 0;
+}
+
+/* MEDIA QUERIES (Responsif) */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        margin-top: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin: 0 10px 10px 10px;
+    }
+  }
